@@ -1,3 +1,29 @@
-<h1>
-  {{title}}
-</h1>
+<div class="mdl-grid panel">
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-tablet mdl-cell--4-col-phone center">
+        <!--login form-->
+        <div class="login-panel login-panel-white">
+            <div class="login-panel-body">
+                <div class="login-panel-login-box">
+                    <span class="logo-name text-center">Pisces</span>
+                    <p class="text-center bottom-line login-info">
+                        请输入试用账号及密码。
+                    </p>
+                    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" novalidate>
+                        <p class="line-align">
+                            <mdl-icon>account_circle</mdl-icon><mdl-textfield #firstElement label="请输入试用账号" type="text" ngModel name="username" floating-label autofocus max=20></mdl-textfield>
+                        </p>
+                        <p class="line-align">
+                            <mdl-icon>visibility_off</mdl-icon><mdl-textfield label="请输入试用账号密码" type="password" ngModel name="password" floating-label max="20" min="4"></mdl-textfield>
+                        </p>
+                        <p class="text-center">
+                            <button mdl-button type="submit" mdl-button-type="raised" mdl-colored="primary" mdl-ripple>进入试用系统</button>
+                        </p>
+                    </form>
+                    <p class="text-center top-line copy-info">
+                        2017&copy; Pisces.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
