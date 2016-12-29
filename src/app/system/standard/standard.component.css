@@ -1,0 +1,22 @@
+.section {
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-box {
+    width: 100%;
+    position: relative;
+}
+
+.content {
+    padding: 20px 10px 20px 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mdl-grid .mdl-cell div h3 {
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}

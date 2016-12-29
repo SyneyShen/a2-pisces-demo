@@ -1,0 +1,49 @@
+<mdl-layout mdl-layout-fixed-header>
+  <mdl-layout-header>
+    <mdl-layout-header-row>
+      <mdl-layout-title>双鱼座</mdl-layout-title>
+      <mdl-layout-spacer></mdl-layout-spacer>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <ng-container *ngFor="let link of links">
+          <ng-container *ngIf="!link.hasSubLinks()">
+            <button mdl-button class="mdl-navigation__link" (click)="gotoUrl(link.url)">
+              {{link.name}}
+            </button>
+          </ng-container>
+          <ng-container *ngIf="link.hasSubLinks()">
+            <button mdl-button class="mdl-navigation__link" #{{link.name}}="mdlButton" [mdl-toggle-menu]="submenu">
+              {{link.name}}
+            </button>
+            <mdl-menu #submenu="mdlMenu" mdl-menu-position="bottom-right">
+              <ng-container *ngFor="let subLink of link.subLinks">
+                <mdl-menu-item mdl-menu-item-full-bleed-divider *ngIf="subLink.divider">
+                  <a class="mdl-navigation__link" routerLink="{{subLink.url}}"><mdl-icon>{{subLink.icon}}</mdl-icon>&nbsp;{{subLink.name}}</a>
+                </mdl-menu-item>
+                <mdl-menu-item *ngIf="!subLink.divider">
+                  <a class="mdl-navigation__link" routerLink="{{subLink.url}}"><mdl-icon>{{subLink.icon}}</mdl-icon>&nbsp;{{subLink.name}}</a>
+                </mdl-menu-item>
+              </ng-container>
+            </mdl-menu>
+          </ng-container>
+        </ng-container>
+      </nav>
+    </mdl-layout-header-row>
+  </mdl-layout-header>
+  <mdl-layout-drawer>
+    <mdl-layout-title>双鱼座</mdl-layout-title>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" >总览</a>
+      <a class="mdl-navigation__link" >考试</a>
+      <a class="mdl-navigation__link" >历史成绩</a>
+      <a class="mdl-navigation__link" >排名</a>
+      <a class="mdl-navigation__link" >评分标准</a>
+      <a class="mdl-navigation__link" >词汇测验</a>
+      <a class="mdl-navigation__link" >个人信息</a>
+    </nav>
+  </mdl-layout-drawer>
+  <mdl-layout-content>
+    <!-- Your content goes here -->
+    <router-outlet></router-outlet>
+  </mdl-layout-content>
+</mdl-layout>

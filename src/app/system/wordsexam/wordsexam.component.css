@@ -1,0 +1,30 @@
+.section {
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mdl-grid .mdl-cell mdl-card {
+    margin: auto;
+}
+
+/*.mdl-grid .mdl-cell div h3 {
+    text-align: center;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.mdl-grid .mdl-cell mdl-card mdl-card-title h2 {
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.mdl-grid .mdl-cell mdl-card mdl-card-supporting-text, .mdl-grid .mdl-cell mdl-card mdl-card-actions button {
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}*/
+
+.mdl-grid * {
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.mdl-grid .mdl-cell div h3 {
+    text-align: center;
+}
