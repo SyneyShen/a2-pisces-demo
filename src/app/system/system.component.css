@@ -10,3 +10,9 @@ mdl-menu mdl-menu-item a {
 nav button, nav mdl-menu mdl-menu-item a {
     font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

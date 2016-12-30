@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-system',
   templateUrl: './system.component.html',
-  styleUrls: ['./system.component.css']
+  styleUrls: ['./system.component.css'],
 })
 export class SystemComponent implements OnInit {
   links: Array<Link> = []

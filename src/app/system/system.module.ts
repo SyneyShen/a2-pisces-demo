@@ -8,6 +8,7 @@ import { routing } from './system.routing';
 import { StandardComponent } from './standard/standard.component';
 import { WordsexamComponent } from './wordsexam/wordsexam.component';
 import { IeltsexamComponent } from './ieltsexam/ieltsexam.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { IeltsexamComponent } from './ieltsexam/ieltsexam.component';
     routing,
     MdlModule
   ],
-  declarations: [HomeComponent, SystemComponent, StandardComponent, WordsexamComponent, IeltsexamComponent]
+  declarations: [HomeComponent, SystemComponent, StandardComponent, WordsexamComponent, IeltsexamComponent, ProfileComponent]
 })
 export class SystemModule { }

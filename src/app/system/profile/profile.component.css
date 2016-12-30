@@ -1,0 +1,44 @@
+.section {
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+}
+
+.content-box {
+    width: 100%;
+    position: relative;
+}
+
+.content {
+    padding: 20px 10px 20px 10px;
+}
+
+mdl-textfield {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.formSubTitle {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #8d8d8d;
+    margin-bottom: 20px;
+}
+
+.cell-center {
+    margin: auto;
+}
+
+.profilePic {
+    background-image: url("./assets/images/account_pic.png");
+    width: 128px;
+    height:128px;
+}
+
+.text-center h3, .text-center h3 small, .formSubTitle h5, p, button {
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}

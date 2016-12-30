@@ -1,0 +1,44 @@
+.section {
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+}
+
+.mdl-grid .mdl-cell mdl-card {
+    margin: auto;
+    width: 100%;
+}
+
+.mdl-grid .mdl-cell div h3, .mdl-grid .mdl-cell div h3 small, .mdl-grid .mdl-cell mdl-card mdl-card-title h2, button {
+    text-align: center;
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.mdl-grid .mdl-cell div h3 {
+    text-align: center;
+}
+
+.listen-exam {
+    background-image: url("./assets/images/listen.png");
+}
+
+.read-exam {
+    background-image: url("./assets/images/read.png");
+}
+
+.write-exam {
+    background-image: url("./assets/images/write.png");
+}
+
+.speak-exam {
+    background-image: url("./assets/images/speak.png");
+
+}
+
+.exam {
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}

@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { StandardComponent } from './standard/standard.component';
 import { WordsexamComponent } from './wordsexam/wordsexam.component';
 import { IeltsexamComponent } from './ieltsexam/ieltsexam.component';
+import { ProfileComponent } from './profile/profile.component';
 import { AuthGuard } from '../guard/auth.guard';
 
 export const systemRoutes : Routes = [
@@ -40,6 +41,11 @@ export const systemRoutes : Routes = [
             {
                 path: 'ieltsexam',
                 component: IeltsexamComponent,
+                canActivate: [AuthGuard]
+            },
+            {
+                path: 'profile',
+                component: ProfileComponent,
                 canActivate: [AuthGuard]
             }
         ],
